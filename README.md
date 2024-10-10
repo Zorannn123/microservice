@@ -1,0 +1,4 @@
+Potrebno je skinuti SQL Server, kao i SQL Server Management Studio u kojem je potrebno kreirati baze podataka navedene u appsettings.json (konkretno u okviru Connection string-a).
+Povezati se na localhost server, odabrati SQL Server Authentication za koju je neophodno kreirati novog korisnika i dozvoliti mu permisije(db_datareader, db_datawriter, db_owner) za sve baze, zatim promeniti parametre u appsettings.json fajlu vezane za kreiranog korisnika.
+Pokrenuti Visual Studio 2022 (kao administrator) i pokrenuti Service Fabric aplikaciju (DeliveryApp), zatim otvoriti microservice_client u Visual Studio Code-u, preko terminala skinuti odgovarajuce pakete (npm install, npm react-router-dom) i pokrenuti klijentsku stranu komandom npm start.
+Pre pokretanja koda, neophodno je imati instaliran Service Fabric.
